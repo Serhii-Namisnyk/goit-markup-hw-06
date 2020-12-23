@@ -434,7 +434,21 @@
                     </li>
                 </ul>
             </div>
-        </div>   
+          
+        <!-- ====INput====== -->
+        <div class="footer_input">
+<h3 class="input_text">Подпишитесь на рассылку</h3>
+<form action="#" class="footer-form">
+<input type="email" class="footer_form-email" name="user-email" placeholder="E-mail">
+<button type="submit" class="footer_button">
+Подписаться
+<svg class="footer_btn-svg">
+    <use href="./icon/sprite.svg#icon-send"></use>
+</svg>
+</button>
+</form>
+        </div>
+        </div>
     </footer>
     <!-- BACKDROP -->
     <div data-modal class="backdrop   is-hidden">
@@ -489,21 +503,22 @@
             Комментарий
             <textarea class="modal_form-massage" name="user_massage"
             placeholder="Введите текст"></textarea>
+            </label>
               <input 
               id="user-policy"
               type="checkbox" 
-              class="modal_form-policy"
+              class=" visually-hidden modal_form-policy"
               name="user_policy"
               value="accept_policy">
-        </label>
+       
         <label  for="user-policy" class="modal_form-policy-text">
-            Соглашаюсь с рассылкой и принимаю 
-           <a href="#">Условия договора</a>
+            Соглашаюсь с рассылкой и принимаю <a  class="modal_form-policy-link" href="#">Условия договора</a>
         </label>
+        <div class="policy_button">
         <button type="submit" class="modal_form-button">
             Отправить
         </button>
-         
+        </div>
     </form>
 </div>
     </div>

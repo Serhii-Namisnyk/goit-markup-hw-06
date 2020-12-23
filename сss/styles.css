@@ -655,6 +655,7 @@ img {
 .footer-conteiner {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .footer_social-list {
   display: flex;
@@ -662,6 +663,7 @@ img {
 }
 .footer-social-link {
   width: 206px;
+  margin-right: 93px;
 }
 .footer_social-link {
   display: flex;
@@ -682,7 +684,55 @@ img {
 .footer-contact {
   margin-right: 70px;
 }
-
+.input_text {
+  margin-bottom: 20px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-form {
+  display: flex;
+}
+.footer_form-email {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  margin-right: 10px;
+  padding-left: 16px;
+  color: var(--primaru-text-color);
+}
+.footer_button {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_btn-svg {
+  fill: white;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}
 /*================ end footer ==================*/
 /* ===============BACKDROP==================== */
 .backdrop {
@@ -798,4 +848,54 @@ img {
   height: 15px;
   border: 1px solid black;
   content: '';
+  margin-right: 8px;
 }
+.modal_form-policy:checked + .modal_form-policy-text::before {
+  background-image: url(../icon/Check.svg);
+  background-color: var(--accent-color);
+  border: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.modal_form-policy-text {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--primaru-text-color);
+  margin-bottom: 30px;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.modal_form-policy-link {
+  color: var(--accent-color);
+}
+.modal_form-button {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+}
+.policy_button {
+  text-align: center;
+}
+/* ============== END BACKDROP ============ */
